@@ -15,7 +15,11 @@ if(isset($_POST['signup']))
 
    
    if(!($email)){
-echo "hi";
+
+      echo "hello";
+
+
+
    }
 
 
