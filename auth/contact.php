@@ -9,20 +9,7 @@
 </head>
 <body>
     <section>
-        <!-- <div class="wrapper">
-            <div class="logo">
-                <img src="images/414176406_947692406719336_209650647001726808_n.png">
-            </div>
-            <ul class="nav-area">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="author.html">Author</a></li>
-                <li><a href="quote.html">Quote</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-     -->
-        
+       
         <div class="login-box">
             <form action="">
                 <h2>Login</h2>
