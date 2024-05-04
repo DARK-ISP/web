@@ -69,7 +69,8 @@ if (isset($_POST['signup'])) {
 
                if (password_verify($password, $loginRow['password'])) {
 
-                  echo $_SESSION['fname'] = $loginRow['fname'];
+                  $_SESSION['id']=$loginRow['id'];
+                  $_SESSION['fname'] = $loginRow['fname'];
                   $_SESSION['lname'] = $loginRow['lname'];
                   $_SESSION['email'] = $loginRow['email'];
                   $_SESSION['ip'] = $loginRow['ip'];

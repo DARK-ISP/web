@@ -62,14 +62,14 @@ include_once 'header.php';
 <div class="quote">
 
     <p class="qtxt">
-       " hello "
+       " Be the change that you wish to see in the world "
 
         <br>
 
        <div class="details">
 
-        <strong>date: 9090</strong>
-        <strong> <i>-hello</i></strong>
+        <strong>date: May 4th, 2024</strong>
+        <strong> <i>-Mahatma Gandhi</i></strong>
 
        </div>
 

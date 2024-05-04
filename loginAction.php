@@ -18,6 +18,8 @@ include_once 'dbConnection.php';
          $data =   mysqli_fetch_assoc($run);
             
             if(password_verify($password, $data['password'])){
+                
+                $_SESSION['id']=$data['id'];
                $_SESSION['fname'] = $data['fname'];
                   $_SESSION['lname'] = $data['lname'];
                   $_SESSION['email'] = $data['email'];
