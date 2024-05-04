@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         body{
-  background:url(https://images.pexels.com/photos/1668928/pexels-photo-1668928.jpeg);
+  background:url(./images/loginbg.png);
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;

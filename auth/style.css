@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/frontpage2.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    position: relative;
+}
+
+.nav-area li{
+    display: inline-block;
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family:' poppins';
+    font-size: 16px;
+}
+
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.logo img{
+    width: 110px;
+    float: left;
+    height: auto;
+    padding-top: 15px;
+}
+
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 30% 31%;
+    text-align: center;
+}
+
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.welcome-text a:hover{
+    background: #fff;
+    color: #333
+}
+
+/*about os css*/
+
+.team-section{
+    width: 100%;
+    z-index: 999;
+}
+
+.team-section .container{
+    width: 100%;
+    margin: auto;
+    background: transparent;
+}
+
+.team-section .container .row{
+    width: 60%;
+    margin: auto;
+}
+
+.team-section .container .row .title{
+    text-align: center;
+    padding-top: 150px;
+    margin-top: 0px;
+
+}
+
+.team-section .container .row .title h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #eb6234;
+}
+
+.team-section .container .row .title p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: #a3a3a3;
+}
+
+.team-section .container .team-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.team-section .container .team-card .card{
+    width: 100%;
+    /* background-color: #fafafa; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.team-section .container .team-card .card:hover{
+    background-color: #f3f3f3;
+    transition: 0.3s;
+}
+
+.team-section .container .team-card .card .image-section img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+
+.team-section .container .team-card .card .content{
+    width: 100%;
+    text-align: center;
+}
+
+.team-section .container .team-card .card .content h3{
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #639ab8;
+}
+
+.team-section .container .team-card .card .content  h4{
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #639ab8;
+}
+
+.team-section .container .team-card .card .content p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: brown;
+}
+
+@media screen and (max-width:900px){
+    .team-section .container .team-card .card{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .team-section .container .team-card{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* contact css */
+section{
+    display: flex;
+     justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 100vh;
+    background: url(images/universe.jpg);
+    background-size: cover;
+    background-position: center ;
+    position: relative;
+     animation: animateBg 5s linear infinite; 
+}
+
+@keyframes animateBg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}  
+ 
+
+
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.reminder-forgot{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reminder-forgot label input{
+    margin-right: 3px;
+}
+
+.reminder-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.reminder-forgot a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+
+.register-link{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:360px){
+    .login-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+
+    .input-box{
+        width: 290px;
+    }
+}
