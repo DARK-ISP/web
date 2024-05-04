@@ -90,13 +90,13 @@ input:valid ~ label {
   </div>
   <div class="field">
     <input type="email" name="email" required spellcheck="false" >
-    <label>email name</label>
+    <label>email </label>
   </div>
    <div class="field">
     <input type="password" name="password" required spellcheck="false" >
     <label>Password</label>
   </div>
-    <button type="submit" name="signup">Submit</button>
+    <button type="submit" name="signup">SignUp</button>
     <h5>already have an account? <a href="login.php">login here</a></h5>
   </div> </div>
  </form>

@@ -91,7 +91,7 @@ input:valid ~ label {
 
 
 
-<form action="action.php">
+<form action="loginAction.php" method="post">
 <div class="login-form">
 
 <!-- <p id="check" style="color: green;">
@@ -100,7 +100,7 @@ input:valid ~ label {
 
 <script>
 
-// let msg = document.getElementById("check").innerHTML=" <?php echo $_SESSION['account_created'] ?>   ";
+// let msg = document.getElementById("check").innerHTML="    ";
 
 // setTimeout(function(){
 //  msg = document.getElementById("check").innerHTML="";
@@ -112,14 +112,14 @@ input:valid ~ label {
 <h2>Login</h2>
 <div class="form">
 <div class="field">
-<input type="text" required spellcheck="false" >
-<label>Username</label>
+<input type="text" name="email" required spellcheck="false" >
+<label>email</label>
 </div>
 <div class="field">
-<input type="text" required spellcheck="false" >
+<input type="text" name="password" required spellcheck="false" >
 <label>Password</label>
 </div>
-<button>Submit</button>
+<button type="submit" name="login">Login</button>
 <h5>don`t have an account? <a href="signup.php">create account</a></h5>
 </div> </div>
 </form>
