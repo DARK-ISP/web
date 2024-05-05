@@ -10,7 +10,7 @@
             <li><a href="quote.php">Quote</a></li>
             <li><a href="about.php">About us</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="profile.php">Profile</a></li>
+            <li><a href="profile.php"> <?php  echo $_SESSION['fname'] ?> </a></li>
         </ul>
     </div>
 

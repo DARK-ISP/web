@@ -19,7 +19,9 @@ if (isset($_POST['signup'])) {
 
       if (!preg_match($pattern, $cleanInput)) {
 
-         echo "invalid character";
+         header("location: signup.php");
+         $_SESSION['error'] = "invalid character";
+         
       }
 
 
@@ -48,7 +50,9 @@ if (isset($_POST['signup'])) {
 
       $result = mysqli_num_rows($extract);
       if ($result > 0) {
-         echo "already exist account with this email";
+         
+         $_SESSION['error'] =  "already exist account with this email";
+         header('location: signup.php');
       } else {
 
          $query = "INSERT INTO `data`(`fname`, `lname`, `email`, `auth`, `password`, `ip`) VALUES ('$fname','$lname','$email','$hashemail','$hashpw','$ip')";
@@ -79,15 +83,18 @@ if (isset($_POST['signup'])) {
 
                   header("location: auth/index.php");
                } else {
-                  echo "something went wrong";
+                  header('location: signup.php');
+                  $_SESSION['error'] =  "something went wrong";
                }
             }
          } else {
-            echo "account not created ";
+            header('location: signup.php');
+            $_SESSION['error'] = "account not created ";
          }
       }
    } else {
-      echo " something went wrong";
+      header('location: signup.php');
+      $_SESSION['error'] = " something went wrong";
    }
 };
 ?>

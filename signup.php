@@ -77,6 +77,7 @@ input:valid ~ label {
 <?php 
 
 require_once "./manageLoginSignup.php";
+require_once 'action.php';
 
 
 
@@ -87,7 +88,25 @@ require_once "./manageLoginSignup.php";
  <form action="action.php" method="POST">
        
 <div class="login-form">
-      <h2>Login</h2>
+
+<p id="check" style="color: red;">
+
+</p> 
+
+
+<script>
+  let msg = document.getElementById("check").innerHTML=" <?php session_start(); echo $_SESSION['error'];  ?>   ";
+
+setTimeout(function(){
+ msg = document.getElementById("check").innerHTML="";
+},5000)
+</script>
+  
+
+      <h2>Signup</h2>
+     
+
+      
   <div class="form">
   <div class="field">
 
