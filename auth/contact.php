@@ -12,27 +12,29 @@
        
         <div class="login-box">
             <form action="">
-                <h2>Login</h2>
+                <h2>Contact us</h2>
             <div class="input-box">
                 <span class="icon"><i class="fa-regular fa-envelope"></i></span>
                 <input type="email"required>
                 <label>Email</label>
             </div>
     
-            <div class="input-box">
+            <!-- <div class="input-box">
                 <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                <input type="password"required>
-                <label>Password</label>
-            </div>
+                <input type="text"required>
+                <label>Message</label>
+            </div> -->
     
-            <div class="reminder-forgot">
-                 <label><input type="checkbox">Remember me</label>
-                 <a href="#">Forgot password</a>
+            <div class="input-box">
+                <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                <input type="text"required>
+                <label>Message</label>
             </div>
+          
     
-            <button type="submit">Login</button>
+            <button type="submit">Submit</button>
             <div class="register-link">
-                <p>Dont have an account<a href="#">Register</a></p>
+                <p>Back To Home <a href="index.php">Home</a></p>
             </div>
             </form>
         </div>
