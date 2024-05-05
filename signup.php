@@ -72,6 +72,17 @@ input:valid ~ label {
 }
     </style>
 </head>
+
+
+<?php 
+
+require_once "./manageLoginSignup.php";
+
+
+
+?>
+
+
 <body>
  <form action="action.php" method="POST">
        

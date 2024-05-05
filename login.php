@@ -76,7 +76,8 @@ input:valid ~ label {
 
 
 <?php 
-//require_once "action.php";
+require_once "loginAction.php";
+require_once "./manageLoginSignup.php";
 
 ?>
 
@@ -94,22 +95,32 @@ input:valid ~ label {
 <form action="loginAction.php" method="post">
 <div class="login-form">
 
-<!-- <p id="check" style="color: green;">
 
-</p> -->
 
 <script>
 
-// let msg = document.getElementById("check").innerHTML="    ";
 
-// setTimeout(function(){
-//  msg = document.getElementById("check").innerHTML="";
-// },3000)
 
 </script>
 
 
 <h2>Login</h2>
+
+
+
+<p id="check" style="color: red;">
+
+</p> 
+
+
+<script>
+  let msg = document.getElementById("check").innerHTML=" <?php session_start(); echo $_SESSION['loginError'];  ?>   ";
+
+setTimeout(function(){
+ msg = document.getElementById("check").innerHTML="";
+},5000)
+</script>
+
 <div class="form">
 <div class="field">
 <input type="text" name="email" required spellcheck="false" >

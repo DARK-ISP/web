@@ -1,6 +1,10 @@
 <?php 
 include_once 'dbConnection.php';
 
+
+$loginError = "";
+$emailError = "";
+
     if(isset($_POST['login']))
     {
 
@@ -30,13 +34,15 @@ include_once 'dbConnection.php';
                   header("location: /web/auth/index.php");
             }
             else{
-                echo "incorrect email or password";
+                header('location: login.php');
+                $_SESSION['loginError'] = "incorrect email or password";
             }
 
 
         }
         else{
-            echo "account not available with this email";
+            header('location: login.php');
+            $_SESSION['loginError'] = "account not available with this email";
         }
 
 
