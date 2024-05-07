@@ -1,10 +1,7 @@
-<?php 
+<?php
 
 session_start();
 
-if(!isset($_SESSION['auth']) || !$_SESSION['auth']){
+if (!isset($_SESSION['auth']) || !$_SESSION['auth']) {
     header("location: ../login.php");
 }
-
-
-?>

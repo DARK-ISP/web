@@ -21,7 +21,6 @@ if (isset($_POST['signup'])) {
 
          header("location: signup.php");
          $_SESSION['error'] = "invalid character";
-         
       }
 
 
@@ -50,7 +49,7 @@ if (isset($_POST['signup'])) {
 
       $result = mysqli_num_rows($extract);
       if ($result > 0) {
-         
+
          $_SESSION['error'] =  "already exist account with this email";
          header('location: signup.php');
       } else {
@@ -73,7 +72,7 @@ if (isset($_POST['signup'])) {
 
                if (password_verify($password, $loginRow['password'])) {
 
-                  $_SESSION['id']=$loginRow['id'];
+                  $_SESSION['id'] = $loginRow['id'];
                   $_SESSION['fname'] = $loginRow['fname'];
                   $_SESSION['lname'] = $loginRow['lname'];
                   $_SESSION['email'] = $loginRow['email'];
@@ -97,16 +96,3 @@ if (isset($_POST['signup'])) {
       $_SESSION['error'] = " something went wrong";
    }
 };
-?>
-
-
-
-
-
-
-
-
-
-
-
-
