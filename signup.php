@@ -13,7 +13,7 @@
       background-position: center;
     }
 
-    .login-form {
+    .login-form { 
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;

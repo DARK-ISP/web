@@ -3,7 +3,7 @@
 use function PHPSTORM_META\sql_injection_subst;
 
 require_once 'device.php';
-require_once 'dbConnection.php';
+require_once 'dbConnection.php'; 
 if (isset($_POST['signup'])) {
 
 
