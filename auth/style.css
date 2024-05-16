@@ -8,6 +8,7 @@
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/frontpage2.jpg);
+    background-attachment: fixed;
     height: 100vh;
     -webkit-background-size: cover;
     background-size: cover;
