@@ -60,24 +60,54 @@
 
 
 
-            <div class="quote">
 
-                <p class="qtxt">
-                    " Be the change that you wish to see in the world "
+            <?php 
 
-                    <br>
+                require_once "../dbConnection.php";
 
-                <div class="details">
+                $query = "SELECT * FROM `quote` ";
+                $result = mysqli_query($connection, $query);
 
-                    <strong>date: May 4th, 2024</strong>
-                    <strong> <i>-Mahatma Gandhi</i></strong>
+                if($result){
+                    while($row = mysqli_fetch_assoc($result)){
+                        ?>
+                        
+                        
+                        
+                        <div class="quote">
+            
 
-                </div>
+            <p class="qtxt">
+                "<?php echo $row['quote'];?> "
 
+                <br>
 
-                </p>
+            <div class="details">
+
+                <strong>date: <?php echo $row['date'];?></strong>
+                <strong> <i>-<?php echo $row['mention'];?></i></strong>
 
             </div>
+
+
+            </p>
+
+        </div>
+
+                        <?php 
+                    }
+                }
+                else{
+                    echo "error fetching data".mysqli_error($connection);
+                }
+
+
+            ?>
+
+
+
+
+            
 
 
         </center>
