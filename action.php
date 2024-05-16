@@ -13,7 +13,7 @@ if (isset($_POST['signup'])) {
    {
       $cleanInput = trim(strip_tags($input));
 
-      $pattern = "/^[a-zA-Z]+$/";
+      $pattern = '/^[a-zA-Z]+$/';
 
 
 
@@ -21,6 +21,7 @@ if (isset($_POST['signup'])) {
 
          header("location: signup.php");
          $_SESSION['error'] = "invalid character";
+         exit;
       }
 
 
