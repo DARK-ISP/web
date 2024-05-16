@@ -11,33 +11,31 @@
 
     <style>
         .quote {
-            background-color: transparent;
+    background-color: transparent;
+    border: 3px solid black;
+    height: auto;
 
-            border: 3px solid black;
+    width: 50%;
+    border-radius: 20px;
+    position: relative; /* Changed from absolute to relative */
+    margin-top: 20px; /* Added margin-top to create space between quote boxes */
+    color: white;
+}
 
-            height: auto;
-            width: 50%;
-            border-radius: 20px;
-            position: absolute;
-            left: 25%;
-            top: 140px;
-            color: white;
-        }
+.qtxt {
+    font-size: large;
+    text-align: left;
+    padding: 30px;
+    z-index: 1;
+}
 
-        .qtxt {
-            font-size: large;
-            text-align: left;
-            padding: 30px;
-            z-index: 1;
-        }
+.details {
+    display: flex;
+    justify-content: space-between; /* Adjusted alignment */
+    padding: 30px;
+    z-index: 1;
+}
 
-        .details {
-            display: flex;
-            gap: 40%;
-            padding: 30px;
-            z-index: 1;
-
-        }
     </style>
 
 
@@ -57,7 +55,7 @@
         <!-- quote box -->
 
         <center>
-
+<br><br><br><br>
 
 
 
