@@ -68,7 +68,11 @@
                 $query = "SELECT * FROM `quote` ";
                 $result = mysqli_query($connection, $query);
 
-                if($result){
+               if($result){
+                $rowCount = mysqli_num_rows($result);
+
+
+                if($rowCount>0){
                     while($row = mysqli_fetch_assoc($result)){
                         ?>
                         
@@ -78,6 +82,7 @@
             
 
             <p class="qtxt">
+                <br>
                 "<?php echo $row['quote'];?> "
 
                 <br>
@@ -92,7 +97,7 @@
 
             </p>
 
-        </div>
+        </div><br>
 
                         <?php 
                     }
@@ -101,8 +106,21 @@
                     echo "error fetching data".mysqli_error($connection);
                 }
 
+            }
+
 
             ?>
+            <br>
+
+            
+
+
+
+               
+
+
+
+            
 
 
 
