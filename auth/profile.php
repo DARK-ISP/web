@@ -82,6 +82,9 @@
       font-size: 14px;
       line-height: 1.5;
     }
+    a{
+      text-decoration:none;
+    }
   </style>
 
 
@@ -117,10 +120,21 @@
         <li><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li> -->
           </ul>
           <p class="bio"> Hello <?php echo $_SESSION['fname']; ?> welcome To ABS Quotes.</p>
+          <br>
+        
+          <button name="logout" type="submit">
+          <a href="./view.php">See More</a>
+          </button>
 
           <br>
 
+          <br>
           <button name="logout" type="submit">
+          <a href="./addQuote.php">Add Quote</a>
+          </button>
+
+          <br><br>
+          <button style="color:red;" name="logout" type="submit">
             Log Out
           </button>
 
