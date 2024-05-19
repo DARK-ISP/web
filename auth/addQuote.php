@@ -245,12 +245,17 @@ include_once '../checkAuth.php';
 <div class="main hide" id="add-quote">
 	<p>Add a New Quote</p>
 	
-<form action="">
+<form action="quoteAction.php" method="post">
 <input type="text" name="author" id="quote-author" placeholder="Author">
 	<p class="hide" id="form-error">Please input a quote.</p>
-	<textarea id="add-quote-text" rows='2' name="quote" maxLength="400" placeholder="Quote"></textarea>
+	<textarea id="add-quote-text" rows='2' name="quote" maxLength="400" placeholder="Quote" require></textarea>
 	<div class="buttons">
-		<a class="button" type="submit" id="submit-quote">Add New Quote</a>
+
+        <button class="button"  id="submit-quote">Add New Quote</button>
+
+
+      
+       
 		<a class="button" id="new-quote-2">Back to Quotes</a>
 	</div>
 </form>
@@ -476,6 +481,7 @@ submitQuoteBtn.onclick = function() {
 		// show form error if empty textbox was submitted
 		formError.classList.remove("hide");
 		textbox.style.borderColor = "red";
+		return false;
 	} else {
 		// submit quote and reinitialize form
 		const quoteObject = { author, quote };
