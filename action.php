@@ -10,7 +10,7 @@ if (isset($_POST['signup'])) {
    //set rules 
 
    function data($input)
-   {
+   { 
       $cleanInput = trim(strip_tags($input));
 
       $pattern = '/^[a-zA-Z]+$/';
